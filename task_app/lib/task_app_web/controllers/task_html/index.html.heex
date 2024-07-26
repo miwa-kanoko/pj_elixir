@@ -1,0 +1,10 @@
+<!-- TaskControllerに対するビュー-->
+
+<.header>
+    Listing Tasks
+</.header>
+
+<.table id="tasks" rows={@tasks}>
+    <:col :let={task} label="Title"><%= task.title %></:col>
+    <:col :let={task} label="Date"><%= task.date %></:col>
+</.table>
